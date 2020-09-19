@@ -52,7 +52,7 @@ class MyTweetsExplorer:
         self.search_button.grid(row=3, column=1)
 
     def search(self):
-        # these values are specific to this app
+
         consumer_key = 'PfpawUW289AetyAwhJunxF9Lt'
         consumer_secret = 'iVLOkiNuMU5vtHnELRGX8EN2gSkPHoHNNAheUfJ8f2lkd9nww2'
         access_token = '1303032794189361152-Ire5CfJXOn1GiZmyR3Vd5bLPlVTbp5'
@@ -62,7 +62,6 @@ class MyTweetsExplorer:
         auth.set_access_token(access_token, access_token_secret)
         api = tw.API(auth, wait_on_rate_limit=True)
 
-        # Define other details
         search_words = self.entry_1.get()
         date_since = self.entry_2.get()
         num_of_items = self.entry_3.get()
